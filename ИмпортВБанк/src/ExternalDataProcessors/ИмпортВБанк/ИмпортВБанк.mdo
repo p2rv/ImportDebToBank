@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08e3770f-cc47-40bc-9611-180756439f1d">
+  <producedTypes>
+    <objectType typeId="514c6254-d5a7-47e4-a2f8-238523152d10" valueTypeId="439e9fb3-3126-4cc1-898e-2cbc3a8d5461"/>
+  </producedTypes>
+  <name>ИмпортВБанк</name>
+  <synonym>
+    <key>ru</key>
+    <value>Импорт в банк</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="bc818a5f-fa8a-41e3-822b-045e066d6b05"/>
+  <defaultForm>ExternalDataProcessor.ИмпортВБанк.Form.Форма</defaultForm>
+  <forms uuid="ad37f4df-cb52-4c25-9583-83d34b35b3a4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ef86c432-0dff-4616-a4b2-069c9d9b63c7">
+    <name>Sbr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Sbr</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f01d8282-3786-4aec-9076-d6bf65e3dae1">
+    <name>PSB</name>
+    <synonym>
+      <key>ru</key>
+      <value>PSB</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>
