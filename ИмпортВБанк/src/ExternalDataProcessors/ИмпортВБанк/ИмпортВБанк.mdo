@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08e3770f-cc47-40bc-9611-180756439f1d">
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08e3770f-cc47-40bc-9611-180756439f1d">
   <producedTypes>
     <objectType typeId="514c6254-d5a7-47e4-a2f8-238523152d10" valueTypeId="439e9fb3-3126-4cc1-898e-2cbc3a8d5461"/>
   </producedTypes>
@@ -10,6 +10,174 @@
   </synonym>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="bc818a5f-fa8a-41e3-822b-045e066d6b05"/>
   <defaultForm>ExternalDataProcessor.ИмпортВБанк.Form.Форма</defaultForm>
+  <tabularSections uuid="ddf7965d-0cd4-4edb-99a0-902f25c98b4f">
+    <producedTypes>
+      <objectType typeId="b984ba8b-6fa0-4f40-b7e8-a57a3b887c6f" valueTypeId="4b87c638-2dfa-4475-9992-6dd68ce9ae2e"/>
+      <rowType typeId="1c9ba584-e808-417b-92dc-00c7250defc9" valueTypeId="dd121c2d-9938-470e-b89e-1376a8fa1a31"/>
+    </producedTypes>
+    <name>ТЧ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТЧ</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e0efae02-258f-4ffb-8f38-e0b3c8670cbe">
+      <name>ИндентификаторКонтрагента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Индентификатор контрагента</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value>                              </value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="4d1ca365-a209-46a9-a754-6db8a81eefe1">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d880c5fd-fe96-4b4d-b9a2-f49e5cac2eb6">
+      <name>Фамилия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Фамилия</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>60</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value>                                                            </value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="fc17af31-be37-4358-8d2a-d34a01ba37ba">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value>               </value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5d86ba02-f354-4279-b988-6f8de217e7f2">
+      <name>Отчество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отчество</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value>               </value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="74a8648b-94ce-45fd-9251-d946ab7df106">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧН=0,00</value>
+      </format>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="c5759064-515d-448a-aff4-96990dd39965">
+      <name>КБК</name>
+      <synonym>
+        <key>ru</key>
+        <value>КБК</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value>                    </value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f0f343fe-fb5e-4d07-9ac8-610b43fe2359">
+      <name>ОКТМО</name>
+      <synonym>
+        <key>ru</key>
+        <value>ОКТМО</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>8</length>
+          <fixed>true</fixed>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value>        </value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
   <forms uuid="ad37f4df-cb52-4c25-9583-83d34b35b3a4">
     <name>Форма</name>
     <synonym>
